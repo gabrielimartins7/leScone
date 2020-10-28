@@ -1,0 +1,32 @@
+$color-primary: #edece4;
+$color-secondary: #2a2426;
+$type-color: #cbc6b9;
+$type-secondary: #988c77;
+$pointer: #00f26d;
+
+$font-primary: 'PT Mono', monospace;
+$font-secondary: 'Aref Ruqaa', serif;
+
+@function em ($pixel, $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin typeOne {
+    font-family: $font-primary;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+}
+
+@mixin typeTwo {
+    font-family: $font-secondary;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+}
