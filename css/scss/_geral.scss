@@ -1,28 +1,37 @@
-body{
-    background: $color-primary;
-    border: 10px solid $type-color;
-    color: $color-secondary;
-    @include d(s){
-        border: none;
-    }
+body {
+	background: $color-one;
+	border: 10px solid $color-two;
+	color: $color-secondary;
+	@include d(s) {
+		border: none;
+	}
 }
 
 img {
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
+}
+
+p {
+	@include tipo-1(18);
 }
 
 .titulo {
-    @include typeOne(18);
-    text-transform: uppercase;
-    @include d(s) {
-        margin-bottom: 40px;
-    }
-    &::after {
-        content: '';
-        display: block;
-        float: right;
-        height: 2px;
-        background: $color-secondary;
-    }
+	@include tipo-1(18);
+	text-transform: uppercase;
+	@include d(s) {
+		margin-bottom: 40px;
+	}
+	&::after {
+		content: '';
+		display: block;
+		width: 75%;
+		float: right;
+		height: 2px;
+		background: $color-secondary;
+		margin-top: 14px;
+		@include d(m) {
+			width: 60%;
+		}
+	}
 }
