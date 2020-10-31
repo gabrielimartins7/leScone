@@ -29,5 +29,20 @@
 				width: auto;
 			}
 		}
+    }
+    img {
+		border-radius: 50%;
+		border: 10px solid $color-two;
+		position: absolute;
+		right: 0px;
+		margin-top: 50px;
+		@include d(l) {
+			right: 150px;
+		}
+		@include d(s) {
+			width: 120px;
+			margin-top: 0px;
+		}
 	}
 }
+
