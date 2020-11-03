@@ -1,7 +1,7 @@
 body {
-	background: $color-one;
-	border: 10px solid $color-two;
-	color: $color-secondary;
+	background: $bege-claro;
+	border: 10px solid $bege-medio;
+	color: $cinza;
 	@include d(s) {
 		border: none;
 	}
@@ -28,7 +28,7 @@ p {
 		width: 75%;
 		float: right;
 		height: 2px;
-		background: $color-secondary;
+		background: $cinza;
 		margin-top: 14px;
 		@include d(m) {
 			width: 60%;
